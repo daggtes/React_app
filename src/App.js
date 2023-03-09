@@ -2,6 +2,8 @@ import {useState, useEffect} from "react";
 import './App.css';
 import SearchIcon from './search.svg';
 import MovieCard from "./MovieCard";
+import NavBar from "./NavBar";
+
 
 //
 
@@ -34,7 +36,10 @@ const App = () => {
 
     return ( 
         <div className="app">
-            <h1>House of Movies</h1>
+            <h1>
+                <NavBar/>
+            </h1>
+            <h2>House of Movies</h2>
             <div className="search">
                 <input
                 placeholder="Search for movies"
